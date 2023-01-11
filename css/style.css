@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Century Gothic', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 3rem 0;
+}
+body {
+  background: #0F1320;
+  margin: auto;
+}
+/* header */
+header .container {
+  max-width: 1920px;
+  margin: auto;
+  z-index: 99;
+  position: relative;
+  padding: 40px 25px;
+}
+header .hero-img-blur::before{
+  content: url(../img/bgShadow01.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+header .hero-img-blur {
+  position: relative;
+  margin: auto;
+  height: 0;
+  max-width: 1920px;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .container nav .list-left {
+  display: flex;
+}
+header .container nav .list-left ul {
+  display: flex;
+  margin-left: 30px;
+}
+header .container nav .list-left ul li {
+  list-style: none;
+  margin: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+header .container nav .list-left ul li a, header .container nav .list-right ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header .container nav .list-left ul li a:hover, header .container nav .list-right ul li a:hover {
+  color: rgb(72, 135, 207);
+}
+header .container nav .list-right ul {
+  display: flex;
+}
+header .container nav .list-right ul li {
+  list-style: none;
+  margin: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+header .container nav .list-right ul li.signUp a {
+  background: transparent;
+  padding: 10px 23px;
+  border: 2px solid #22A75D;
+  border-radius: 52px;
+  transition: 0.3s;
+}
+header .container nav .list-right ul li.signUp a:hover {
+  color: #fff;
+  background: #22A75D;
+}
+/* Hero banner */
+main section .container {
+  max-width: 1920px;
+  margin: auto;
+}
+main section .container.hero-banner {
+  display: flex;
+  position: relative;
+}
+main section .container.hero-banner .content-banner {
+  width: 50%;
+}
+main section .container.hero-banner .content-banner.satu {
+  padding: 5rem;
+}
+main section .container.hero-banner .content-banner.satu a {
+  font-weight: 600;
+  position: relative;
+  top: 2.3rem;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  padding: 10px 23px;
+  border: 2px solid #22A75D;
+  border-radius: 52px;
+  transition: 0.3s;
+}
+main section .container.hero-banner .content-banner.satu a:hover {
+  background: #22A75D;
+  color: #fff;
+}
+main section .container.hero-banner .content-banner .heading-sentence h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 54px;
+}
+main section .container.hero-banner .content-banner .paragraph-sentence p {
+  color: #DDE2FF;
+  margin-top: 2.5rem;
+  line-height: 25px;
+}
+main section .container.hero-banner .content-banner.dua {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main section .container.hero-banner .content-banner img {
+  margin-top: -9rem;
+  max-width: 950px;
+  pointer-events: none;
+  /* background: blue; */
+}
+/* Period of time */
+main section .container.period-of-time {
+  width: 100%;
+  /* background: tomato; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* background: #22A75D; */
+}
+main section .container.period-of-time .period-heading h2 {
+  margin-top: 8rem;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 72px;
+  padding-left: 90px;
+}
+main section .container.period-of-time .period-body {
+  display: flex;
+  align-items: center;
+}
+main section .container.period-of-time .period-body .period.list-period-of-time {
+  width: 25%;
+  padding-left: 140px;
+  /* background: red; */
+}
+main section .container.period-of-time .period-body .period.list-period-of-time ul {
+  margin-top: 10rem;
+}
+main section .container.period-of-time .period-body .period.list-period-of-time ul li {
+  font-weight: 600;
+  padding-left: 5ch;
+  color: #fff;
+  line-height: 5;
+}
+main section .container.period-of-time .period-body .period.list-period-of-time ul li::marker {
+  content: url("../icon/line.png");
+}
+main section .container.period-of-time .period-body .period.image {
+  width: 75%;
+  /* background: blue; */
+}
+main section .container.period-of-time .period-body .period img {
+  max-width: 1115px;
+  float: right;
+  pointer-events: none;
+}
+/* contact us */
+main section .container.contact-section {
+  display: flex;
+}
+main section .container.contact-section .contact-us.satu {
+  width: 60%;
+  padding: 5rem;
+}
+main section .container.contact-section .contact-us.dua {
+  width: 40%;
+}
+main section .container.contact-section .contact-us.satu a {
+  font-weight: 600;
+  position: relative;
+  top: 2.3rem;
+  text-decoration: none;
+  color: #fff;
+  background: #FFD100;
+  padding: 10px 23px;
+  border-radius: 52px;
+  transition: 0.3s;
+}
+main section .container.contact-section .contact-us.satu a:hover {
+  background: #fadf68;
+}
+main section .container.contact-section .contact-us .heading-sentence h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 54px;
+}
+main section .container.contact-section .contact-us .paragraph-sentence p {
+  color: #f4f4f4;
+  margin-top: 2.5rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+main section .container.contact-section .contact-us.dua {
+  display: flex;
+  align-items: center;
+}
+main section .container.contact-section .contact-us img {
+  pointer-events: none;
+}
+/* feature */
+main section .container.feature-section {
+  display: flex;
+  justify-content: center;
+}
+main section .container.feature-section .feature {
+  max-width: 670px;
+  /* height: 430px; */
+  /* margin: auto; */
+  border-radius: 17px;
+  margin: 0 10px;
+}
+main section .container.feature-section .feature .paragraph-sentence p {
+  color: #f4f4f4;
+  margin-top: .5rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+main section .container.feature-section .feature .heading-sentence img {
+  pointer-events: none;
+}
+main section .container.feature-section .feature .heading-sentence h2 {
+  font-size: 2rem;
+}
+main section .container.feature-section .feature .heading-sentence h2 span {
+  text-decoration: underline;
+}
+main section .container.feature-section .feature {
+  padding: 65px 55px;
+  background: #171B29;
+}
+main section .container.feature-section .feature a {
+  font-weight: 600;
+  position: relative;
+  top: 2.3rem;
+  color: #22A75D;
+}
+main section .container.feature-section .feature a:hover {
+  text-decoration: none;
+}
+/* feature satu */
+main section .container.feature-section .feature.satu a.buttonSatu {
+  top: 117px;
+}
+main section .container.feature-section .feature.satu a::after {
+  content: url(../icon/right-arrow-green.png);
+  position: absolute;
+  top: 3px;
+  right: -1.7rem;
+}
+main section .container.feature-section .feature.satu .heading-sentence h2 {
+  color: #22A75D;
+}
+/* feature dua */
+main section .container.feature-section .feature.dua {
+  position: relative;
+  top: 7rem;
+}
+main section .container.feature-section .feature.dua a {
+  color: #2278D4;
+}
+main section .container.feature-section .feature.dua a::after {
+  content: url(../icon/right-arrow-blue.png);
+  position: absolute;
+  top: 3px;
+  right: -1.7rem;
+}
+main section .container.feature-section .feature.dua .heading-sentence h2 {
+  color: #2278D4;
+}
+/* excess */
+main section .container.excess-section {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+main section .container.excess-section::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 800px;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+main section .container.excess-section .excess {
+  width: 50%;
+}
+/* excess satu */
+main section .container.excess-section .excess.satu img {
+  width: 100%;
+  pointer-events: none;
+}
+/* excess dua */
+main section .container.excess-section .excess.dua {
+  background-image: url(../img/bgWhite.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 15.5% 7% 0;
+}
+main section .container.excess-section .excess.dua .heading-sentence h2 {
+  color: #0F1320;
+  font-size: 2rem;
+}
+main section .container.excess-section .excess.dua .paragraph-sentence p {
+  color: #0F1320;
+  margin-top: 2rem;
+}
+/* services */
+main section .container.services-section {
+  display: flex;
+  background: #0F1320;
+  padding: 15rem 0 5%;
+  margin-top: -6.2rem;
+  border-top-right-radius: 20rem;
+  justify-content: space-evenly;
+}
+main section .container.services-section .services .heading-sentence img {
+  margin-left: -40px;
+}
+main section .container.services-section .services .paragraph-sentence ol li {
+  color: #fff;
+}
+main section .container.services-section .services .paragraph-sentence ol li::marker {
+  font-weight: 600;
+}
+main section .container.services-section .services.satu .paragraph-sentence ol li::marker {
+  color: #22A75D;
+}
+main section .container.services-section .services.dua .paragraph-sentence ol li::marker {
+  color: #2278D4;
+}
+main section .container.services-section .services.tiga .paragraph-sentence ol li::marker {
+  color: #FFD100;
+}
+main section .container.services-section .services.empat .paragraph-sentence ol li::marker {
+  color: #E20613;
+}
+/* tokner satu */
+main section .container.tokner-section {
+  display: flex;
+}
+main section .container.tokner-section .tokner.satu {
+  width: 50%;
+  padding: 5rem;
+}
+main section .container.tokner-section .tokner.dua {
+  width: 50%;
+  padding: 5rem;
+}
+main section .container.tokner-section .tokner.satu a {
+  font-weight: 600;
+  position: relative;
+  top: 2.3rem;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #22A75D;
+  padding: 10px 23px;
+  border-radius: 52px;
+  transition: 0.3s;
+}
+main section .container.tokner-section .tokner.satu a:hover {
+  background: #22A75D;
+}
+main section .container.tokner-section .tokner .heading-sentence h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 54px;
+  margin-left: 15px;
+  display: inline-block;
+}
+main section .container.tokner-section .tokner .paragraph-sentence p {
+  color: #f4f4f4;
+  margin-top: 2.5rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+main section .container.tokner-section .tokner .paragraph-sentence p.kutipan {
+  background: #E20613;
+}
+main section .container.tokner-section .tokner .paragraph-sentence .kutipan {
+  position: relative;
+}
+main section .container.tokner-section .tokner .paragraph-sentence p.bold-sentence {
+  font-weight: 600;
+}
+main section .container.tokner-section .tokner .paragraph-sentence p.kutip::before {
+  content: '';
+  position: absolute;
+  background-image: url(../icon/kutip.png);
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 7px;
+  top: 5px;
+  left: 0;
+}
+main section .container.tokner-section .tokner .paragraph-sentence p.kutip {
+  padding-left: 25px;
+  font-style: italic;
+}
+main section .container.tokner-section .tokner.dua {
+  display: flex;
+  align-items: flex-start;
+}
+main section .container.tokner-section .tokner.dua img {
+  pointer-events: none;
+  max-width: 100%;
+}
+/* Presale Details */
+main section .container.presale-details-section {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/bgFullRainbow.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 15.5rem 7% 35rem;
+}
+main section .container.presale-details-section .presale-details-body {
+  display: flex;
+  justify-content: center;
+}
+main section .container.presale-details-section .presale-details-heading h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+main section .container.presale-details-section .presale-details-body .presale-details {
+  width: 410px;
+  border-radius: 17px;
+  margin: 0 10px;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .paragraph-sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .paragraph-sentence p {
+  margin-top: .5rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .paragraph-sentence p strong {
+  font-size: 1.2rem;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .heading-sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .heading-sentence img {
+  pointer-events: none;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .heading-sentence h2 {
+  font-size: 2rem;
+}
+main section .container.presale-details-section .presale-details-body .presale-details .heading-sentence p {
+  font-weight: 600;
+  margin-top: 15px;
+}
+main section .container.presale-details-section .presale-details-body .presale-details {
+  padding: 65px 55px;
+  background: #fff;
+}
+/* presale-details satu */
+/* presale-details dua */
+main section .container.presale-details-section .presale-details-body .presale-details.dua {
+  position: relative;
+  top: 3rem;
+}
+/* How to buy */
+main section.buying {
+  margin-top: -15rem;
+  z-index: -1;
+  position: relative;
+}
+main section.buying .container {
+  position: relative;
+}
+main section.buying .hero-img-blur::before{
+  content: url(../img/bgShadow02.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main section.buying .hero-img-blur {
+  position: relative;
+  margin: auto;
+  height: 0;
+  max-width: 1920px;
+}
+main section.buying .container.buying-section .buying-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+main section.buying .container.buying-section .buying-heading h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+main section.buying .container.buying-section .buying-body .buying-box {
+  padding: 65px 55px;
+  background: #171B29;
+  width: 410px;
+  border-radius: 17px;
+  margin: 0 10px;
+  position: relative;
+}
+main section.buying .container.buying-section .buying-body .buying-box .paragraph-sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  color: #fff;
+}
+main section.buying .container.buying-section .buying-body .buying-box .heading-sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.buying .container.buying-section .buying-body .buying-box .heading-sentence p {
+  font-weight: 600;
+  color: rgba(255, 255, 2555, .5);
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  font-size: 12px;
+}
+/* buying satu */
+main section.buying .container.buying-section .buying-body .buying-box.satu.tiga {
+  position: relative;
+}
+main section.buying .container.buying-section .buying-body .buying-box.satu.tiga::before {
+  content: url(../icon/arrow_yellow.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 113px;
+  left: -53px;
+}
+/* buying dua */
+main section.buying .container.buying-section .buying-body .buying-box.dua {
+  position: relative;
+  top: 3rem;
+}
+main section.buying .container.buying-section .buying-body .buying-box.dua::before {
+  content: url(../icon/arrow_green.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 67px;
+  left: -53px;
+}
+/* footer */
+footer {
+  max-width: 1920px;
+  margin: auto;
+  /* background: #fff; */
+  padding: 3rem 0;
+  margin-top: 10rem;
+}
+footer ul.menu-nav {
+  display: flex;
+  justify-content: center;
+}
+footer ul.menu-nav li {
+  list-style: none;
+  margin: 0 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+footer ul.menu-nav li a {
+  color: #fff;
+  text-underline-offset: 2.5px;
+}
+footer ul.menu-nav li a:hover {
+  text-decoration: none;
+}
+footer ul.menu-nav li.slash {
+  text-decoration: none;
+  color: rgba(255, 255, 2555, .3);
+}
+footer ul.copy-right {
+  margin-top: 10rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+footer ul.social-media {
+  display: flex;
+}
+footer ul.social-media li img{
+  margin: 0 10px;
+}
+footer ul.copy-right li.oleg-kulik {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+}
+footer ul.copy-right li.oleg-kulik p:nth-child(2) {
+  position: relative;
+  margin-top: 7px;
+}
+footer ul.copy-right li.oleg-kulik p a {
+  text-underline-offset: 2.5px;
+  color: rgba(255, 255, 2555, .5);
+}
+footer ul.copy-right li.oleg-kulik p a:hover {
+  text-decoration: none;
+}
+footer ul.copy-right li.oleg-kulik img {
+  position: absolute;
+  left: -28px;
+  top: 0;
+}
