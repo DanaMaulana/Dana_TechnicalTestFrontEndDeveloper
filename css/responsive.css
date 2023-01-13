@@ -1,0 +1,677 @@
+@media (max-width: 991px) {
+  /* section {
+    padding: 3rem 0;
+  } */
+  /* header .hero-img-blur {
+    max-width: 991px;
+  }
+  main section .container {
+    max-width: 991px;
+  }
+  footer {
+    max-width: 991px;
+  } */
+  /* header */
+  header .container {
+    padding: 2em 2em;
+    /* max-width: 991px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  header .container .menuToggle {
+    order: 1;
+    border-radius: 0.5em;
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 100;
+  }
+  header .container nav .logo {
+    order: 2;
+    z-index: 1;
+  }
+  header .container .menuToggle::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #fff;
+  }
+  header .container .menuToggle::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+    transform: translateY(10px);
+  }
+  header .container .menuToggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+  header .container .menuToggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+  header .container nav .list-menu {
+    display: none;
+  }
+  header .container nav li {
+    margin: 1em;
+  }
+  header .container nav li a {
+    color: #333;
+    font-size: 1.6em;
+    font-weight: 500;
+    background: none;
+    letter-spacing: 0.2em;
+  }
+  header .container nav .list-menu.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #0F1320;
+  }
+  header .container nav .list-menu ul {
+    margin-left: 0 !important;
+  }
+  header .container nav .list-menu ul li {
+    margin: 1.5rem;
+    padding-left: 2.8rem;
+  }
+  header .container nav .list-menu .navigasi-list {
+    flex-direction: column;
+  }
+  header .container nav .list-menu .sign li:nth-child(2) {
+    padding-left: 0;
+  }
+  /* Hero banner */
+  main section .container.hero-banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  main section .container.hero-banner .content-banner {
+    width: 100%;
+  }
+  main section .container.hero-banner .content-banner.satu {
+    padding: 0 5rem;
+    z-index: 1;
+  }
+  main section .container.hero-banner .content-banner img {
+    margin-top: -15rem;
+  }
+  /* Period of time */
+  main section .container.period-of-time .period-heading h2 {
+    margin-top: -1rem;
+    font-size: 3rem;
+    padding-left: 44px;
+  }
+  main section .container.period-of-time .period-body {
+    flex-direction: column;
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 90px;
+    width: 100%;
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time .option-responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time .option-responsive img {
+    order: 1;
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time .option-responsive select {
+    order: 2;
+    font-size: 16px;
+    font-weight: bold;
+    width: 120px;
+    padding: 15px 7px;
+    border: none;
+    background: #000000;
+    color: #fff;
+    margin-top: 5px;
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time .option-nonResponsive {
+    display: none;
+  }
+  main section .container.period-of-time .period-body .period.image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  main section .container.period-of-time .period-body .period.image img {
+    margin-top: 2rem;
+    max-width: 735px;
+    float: right;
+    pointer-events: none;
+  }
+  /* contact us */
+  main section .container.contact-section {
+    display: flex;
+  }
+  main section .container.contact-section .contact-us.satu {
+    width: 50%;
+    padding: 5rem;
+  }
+  main section .container.contact-section .contact-us.dua {
+    width: 50%;
+  }
+  main section .container.contact-section .contact-us .heading-sentence h2 {
+    font-size: 2.5rem;
+    line-height: 44px;
+  }
+  /* feature */
+  main section .container.feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section .container.feature-section .feature {
+    max-width: 670px;
+  }
+  main section .container.feature-section .feature .heading-sentence h2 {
+    color: #ffffff !important;
+  }
+  /* feature satu */
+  main section .container.feature-section .feature.satu .heading-sentence h2 span {
+    color: #22A75D;
+  }
+  main section .container.feature-section .feature.satu a.buttonSatu {
+    top: 37px;
+  }
+  main section .container.feature-section .feature.satu .heading-sentence h2 {
+    color: #22A75D;
+  }
+  /* feature dua */
+  main section .container.feature-section .feature.dua {
+    top: 3rem;
+  }
+  main section .container.feature-section .feature.dua .heading-sentence h2 span {
+    color: #2278D4;
+  }
+  /* excess */
+  main section .container.excess-section {
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  main section .container.excess-section::before {
+    height: 500px;
+    top: 100%;
+    z-index: -99;
+  }
+  main section .container.excess-section .excess {
+    width: 100%;
+  }
+  /* excess dua */
+  main section .container.excess-section .excess.dua .heading-sentence h2 {
+    font-size: 3rem;
+  }
+  main section .container.excess-section .excess.dua {
+    background-image: url(../img/bgWhite.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 18.7rem 10rem 0;
+  }
+  /* services */
+  main section .container.services-section {
+    flex-wrap: wrap;
+    padding: 10rem 0 5%;
+    margin-top: 0;
+    /* margin-left: 1rem; */
+  }
+  main section .container.services-section .services {
+    width: 370px;
+    height: 250px;
+    margin: 2rem 0;
+  }
+  main section .container.services-section .services .heading-sentence img {
+    margin-left: -20px;
+  }
+  /* Tokner is coming */
+  main section .container.tokner-section {
+    flex-direction: column-reverse;
+  }
+  main section .container.tokner-section .tokner.satu {
+    margin-top: -7rem;
+    width: 100%;
+    padding: 5rem;
+  }
+  main section .container.tokner-section .tokner.dua {
+    width: 100%;
+    padding: 5rem;
+  }
+  /* Presale Details */
+  main section .container.presale-details-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bgFullRainbow.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    padding: 15.5rem 7% 35rem;
+  }
+  main section .container.presale-details-section .presale-details-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section .container.presale-details-section .presale-details-body .presale-details {
+    width: 410px;
+    border-radius: 17px;
+    margin: 0 10px;
+  }
+  main section .container.presale-details-section .presale-details-body .presale-details.dua {
+    margin-top: 20px;
+  }
+  main section .container.presale-details-section .presale-details-body .presale-details.satu.tiga {
+    margin-top: 7rem;
+  }
+  /* How to buy */
+  main section.buying {
+    margin-top: -25rem;
+  }
+  main section.buying .hero-img-blur {
+    max-width: 991px !important;
+    top: -3rem;
+  }
+  main section.buying .container.buying-section .buying-body {
+    margin-top: 5rem;
+  }
+  /* footer */
+  footer ul.menu-nav li {
+    margin: 0 1rem;
+  }
+  footer ul.copy-right {
+    margin-top: 8rem;
+    padding: 0 2rem;
+  }
+  footer ul.social-media li img {
+    margin: 0 0;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  /* header */
+  header .container {
+    padding: 2em 2em;
+  }
+  header .container nav li a {
+    color: #333;
+    font-size: 1.6em;
+    font-weight: 500;
+    background: none;
+    letter-spacing: 0.2em;
+  }
+  header .container nav .list-menu.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #0F1320;
+  }
+  header .container nav .list-menu ul li a {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  /* Hero banner */
+  main section .container.hero-banner .content-banner.satu {
+    padding: 0 3rem;
+  }
+  main section .container.hero-banner .content-banner img {
+    margin-top: -10rem;
+    max-width: 950px;
+    pointer-events: none;
+  }
+  /* Period of time */
+  main section .container.period-of-time .period-body .period.list-period-of-time {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    width: 100%;
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time .option-responsive {
+    padding: 0 20px;
+  }
+  main section .container.period-of-time .period-body .period.image img {
+    max-width: 635px;
+  }
+  /* contact us */
+  main section .container.contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .container.contact-section .contact-us.satu {
+    width: 100%;
+    padding: 3rem;
+  }
+  main section .container.contact-section .contact-us.dua {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main section .container.contact-section .contact-us .heading-sentence h2 {
+    font-size: 2.5rem;
+  }
+  /* excess */
+  main section .container.excess-section {
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  main section .container.excess-section::before {
+    width: 100%;
+    height: 600px;
+    top: 85%;
+  }
+  main section .container.excess-section .excess {
+    width: 100%;
+  }
+  /* excess dua */
+  main section .container.excess-section .excess.dua {
+    padding: 10rem 5rem 0;
+  }
+  /* services */
+  main section .container.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: #0F1320;
+    padding: 10rem 0 5%;
+    margin-top: 0;
+    /* margin-left: 1rem; */
+    justify-content: space-evenly;
+  }
+  main section .container.services-section .services {
+    width: 270px;
+    margin: 1rem 5px;
+  }
+  main section .container.services-section .services .heading-sentence img {
+    margin-left: -20px;
+  }
+  /* Presale Details */
+  main section .container.presale-details-section {
+    background-size: 200%;
+    margin-top: -10rem;
+  }
+  /* How to buy */
+  main section.buying {
+    margin-top: -35rem;
+  }
+  main section.buying .hero-img-blur {
+    top: 20rem;
+  }
+  main section.buying .container.buying-section .buying-body {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.buying .container.buying-section .buying-body .buying-box {
+    width: 80%;
+    margin: 5px 0;
+  }
+  main section.buying .container.buying-section .buying-body .buying-box.dua {
+    top: 0;
+  }
+  main section.buying .container.buying-section .buying-body .buying-box.dua::before {
+    content: url(../icon/arrow_green_down.png);
+    top: -36px;
+    left: 270px;
+  }
+  main section.buying .container.buying-section .buying-body .buying-box.satu.tiga::before {
+    content: url(../icon/arrow_yellow_down.png);
+    top: -36px;
+    left: 270px;
+  }
+  /* footer */
+  footer {
+    padding: .5rem 0;
+    margin-top: 1rem;
+  }
+  footer ul.menu-nav li {
+    margin: 0 1rem;
+  }
+  footer ul.copy-right {
+    margin-top: 8rem;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul {
+    margin: 1rem 0;
+  }
+  footer ul.copy-right li.oleg-kulik {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* header */
+  header .container nav .list-menu.active {
+    background-image: url(../img/bgSp.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+  }
+  /* Hero banner */
+  main section .container.hero-banner .content-banner.satu {
+    padding: 0 3rem;
+  }
+  main section .container.hero-banner .content-banner img {
+    margin-top: -5rem;
+    max-width: 760px;
+  }
+  /* Period of time */
+  main section .container.period-of-time .period-body .period.image {
+    overflow-x: hidden;
+  }
+  main section .container.period-of-time .period-body .period.image img {
+    max-width: 1220px;
+  }
+  /* services */
+  main section .container.services-section {
+    padding: 10rem 1rem 5%;
+  }
+  main section .container.services-section .services {
+    width: 270px;
+    margin: 1rem 3px;
+  }
+  main section .container.services-section .services .heading-sentence img {
+    margin-left: -37px;
+  }
+  /* Presale Details */
+  main section .container.presale-details-section {
+    background-size: 300%;
+    margin-top: -10rem;
+  }
+  /* How to buy */
+  main section.buying .container.buying-section .buying-body .buying-box.dua::before {
+    left: 200px;
+  }
+  main section.buying .container.buying-section .buying-body .buying-box.satu.tiga::before {
+    left: 200px;
+  }
+  /* footer */
+  footer ul.menu-nav li {
+    margin: 0 10px;
+  }
+  footer ul.copy-right {
+    margin-top: 8rem;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul {
+    margin: 1rem 0;
+  }
+  footer ul.copy-right li.list-socmed {
+    width: 100%;
+  }
+  footer ul.copy-right li.list-socmed ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 428px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* header */
+  header .container {
+    padding: 2em 1em;
+  }
+  header .container nav .list-menu ul li a {
+    font-size: 1.3rem;
+  }
+  header .container nav .list-menu .sign {
+    display: none;
+  }
+  header .container nav .list-menu ul li {
+    padding-left: 0;
+  }
+  header .container nav .list-menu .navigasi-list {
+    margin-top: -10rem;
+  }
+  /* Hero banner */
+  main section .container.hero-banner .content-banner.satu {
+    padding: 0 1rem;
+  }
+  main section .container.hero-banner .content-banner img {
+    margin-top: -3rem;
+    max-width: 480px;
+  }
+  /* Period of time */
+  main section .container.period-of-time .period-heading h2 {
+    padding-left: 1rem;
+  }
+  main section .container.period-of-time .period-body .period.image img {
+    margin-top: -2rem;
+    max-width: 760px;
+    transform: translateX(8%);
+  }
+  main section .container.period-of-time .period-body .period.list-period-of-time .option-responsive {
+    padding: 0 0;
+  }
+  /*  contact us  */
+  main section .container.contact-section .contact-us.satu {
+    padding: 0 1rem;
+  }
+  main section .container.contact-section .contact-us img {
+    max-width: 350px;
+  }
+  main section .container.contact-section .contact-us.dua {
+    margin-top: 4rem;
+  }
+  /* feature */
+  main section .container.feature-section {
+    margin-top: -4rem;
+  }
+  /* excess */
+  main section .container.excess-section {
+    margin-top: .7rem;
+  }
+  main section .container.excess-section::before {
+    height: 900px;
+    top: 50%;
+  }
+  main section .container.excess-section .excess.dua {
+    padding: 5rem 1rem 0;
+  }
+  /* services */
+  main section .container.services-section {
+    padding: 3rem 1rem 5%;
+  }
+  main section .container.services-section .services {
+    max-width: 270px;
+    height: auto;
+  }
+  main section .container.services-section {
+    border-top-right-radius: 0;
+  }
+  /* Tokner is coming */
+  main section .container.tokner-section .tokner.dua {
+    padding: 1rem;
+  }
+  main section .container.tokner-section .tokner.satu {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  main section .container.tokner-section .tokner .heading-sentence h2 {
+    font-size: 2.4rem;
+    margin-left: 0;
+  }
+  /* Presale Details */
+  main section .container.presale-details-section {
+    background-size: 500%;
+    margin-top: -4rem;
+  }
+  main section .container.presale-details-section .presale-details-body .presale-details {
+    width: 100%;
+  }
+  main section .container.presale-details-section .presale-details-heading h2 {
+    font-size: 2.3rem;
+  }
+  main section .container.presale-details-section .presale-details-body .presale-details {
+    margin: 1.5rem 0 0;
+  }
+  /* How to buy */
+  main section.buying .hero-img-blur {
+    top: 14rem;
+  }
+  main section.buying .container.buying-section .buying-body {
+    margin-top: 1.7rem;
+  }
+  main section.buying .container.buying-section .buying-body .buying-box.dua::before, main section.buying .container.buying-section .buying-body .buying-box.satu.tiga::before {
+    left: 115px;
+  }
+  /* footer */
+  footer {
+    margin-top: -7rem;
+  }
+  footer ul.menu-nav {
+    display: none;
+  }
+  footer ul.copy-right {
+    margin-top: 8rem;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul {
+    margin: 1rem 0;
+  }
+  footer ul.copy-right li.list-socmed {
+    width: 100%;
+  }
+  footer ul.copy-right li.list-socmed ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
