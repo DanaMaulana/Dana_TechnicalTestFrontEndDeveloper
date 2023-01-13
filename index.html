@@ -5,27 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Tokners</title>
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Dana Maulana</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TVS62KC');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
   <!-- header -->
   <header>
     <div class="hero-img-blur"></div>
     <div class="container">
+      <!-- Menu toggle -->
+      <div class="menuToggle" onclick="menuHumberger();"></div>
       <nav>
-        <!-- list-left -->
-        <div class="list-left">
-          <div class="logo"><a href="#"><img src="img/iconLogo.svg" alt="Logo"></a></div>
-          <ul>
-            <li><a href="#">Our team</a></li>
-            <li><a href="#">Tokens</a></li>
-            <li><a href="#">Connect wallet</a></li>
-            <li><a href="#">Lightpaper</a></li>
+        <div class="logo"><a href="#"><img src="img/iconLogo.svg" alt="Logo"></a></div>
+        <!-- list-menu -->
+        <div class="list-menu">
+          <ul class="navigasi-list">
+            <li><a href="#" onclick="menuHumberger();">Our team</a></li>
+            <li><a href="#" onclick="menuHumberger();">Tokens</a></li>
+            <li><a href="#" onclick="menuHumberger();">Connect wallet</a></li>
+            <li><a href="#" onclick="menuHumberger();">Lightpaper</a></li>
           </ul>
-        </div>
-        <!-- list-right -->
-        <div class="list-right">
-          <ul>
+          <ul class="sign">
             <li><a href="#">Sign In</a></li>
             <li class="signUp"><a href="#">Sign Up</a></li>
           </ul>
@@ -42,7 +53,7 @@
             <h1>Reimagining social<br>media through the<br>power of the blockchain.</h1>
           </div>
           <div class="paragraph-sentence">
-            <p>We are creating social media 3.0 with influencers, celebrities and<br>creators being able to launch their own digital currency by simply<br>creating a profile with media content posted as Non fungible<br>Tokens that can be owned and traded on the Tknrs network</p>
+            <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network</p>
           </div>
           <a href="#">Learn More</a>
         </div>
@@ -59,7 +70,17 @@
         </div>
         <div class="period-body">
           <div class="period list-period-of-time">
-            <ul>
+            <div class="option-responsive">
+							<select>
+								<option value="HND">2018</option>
+								<option value="CTS">2019</option>
+								<option value="HKD">2020</option>
+								<option value="OKA">2021</option>
+								<option value="CGK">2022</option>
+							</select>
+              <img src="img/arrow.png" alt="arrow">
+						</div>
+            <ul class="option-nonResponsive">
               <li>2018</li>
               <li>2019</li>
               <li>2020</li>
@@ -197,18 +218,22 @@
             <h2>Tokner is coming</h2>
           </div>
           <div class="paragraph-sentence">
+            <input id="ch" type="checkbox">
             <p>Cryptocurrency adoption is at less than 1% of the global world population with some countries and entities actively fighting against its mass adoption and the smartest developers and nerds holding the fort.</p>
             <p>Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to fix one problem or the other with some quite simply FOMOing the moment. Our goal is to bring mass adoption to the cryptocurrency space by dumbing it down. How far down? So down that even a celebrity can explain it in simple words to their followers and have them download an app, buy into the social currency of their favourite person and watch their investment as is with other crypto currency project.</p>
             <p>We are trying to do to this space what investment apps did for the "nonexistent retail investors". We are gamefying digital currency, bringing in popular faces instead of hard to understand projects to make it the norm and inadvertently being the "gateway drug" for a lot of people to finally give this space a real look.</p>
-            <p class="bold-sentence">A new digital economy is coming. People would be just as powerful as countries and creators would be paid beyond the peanuts that conventional social media platforms can offer.</p>
-            <p>There would be new markets and advertisers with little to offer would not find home there. Like Kanye said,</p>
-            <div class="kutipan">
-              <p class="kutip">"Personalities would become the new currency, and services would be built on top of them".</p>
+            <div class="hidden">
+              <p class="bold-sentence">A new digital economy is coming. People would be just as powerful as countries and creators would be paid beyond the peanuts that conventional social media platforms can offer.</p>
+              <p>There would be new markets and advertisers with little to offer would not find home there. Like Kanye said,</p>
+              <div class="kutipan">
+                <p class="kutip">"Personalities would become the new currency, and services would be built on top of them".</p>
+              </div>
+              <p>Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.</p>
+              <p>Currency is digital, it has been that way for a while now, but this time there would be no dead presidents on the money, there would people like you on the money, and you would own it because it would make the most sense in the world.</p>
+              <label for="ch">Show less</label>
             </div>
-            <p>Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.</p>
-            <p>Currency is digital, it has been that way for a while now, but this time there would be no dead presidents on the money, there would people like you on the money, and you would own it because it would make the most sense in the world.</p>
+            <label for="ch" id="readMore">Read More</label>
           </div>
-          <a href="#">Read More</a>
         </div>
         <div class="tokner dua">
           <img class="hero-image" src="img/bgHand.png" alt="background hand">
@@ -246,9 +271,9 @@
               <p>Hard cap: 10000 BNB</p>
             </div>
           </div>
-          <div class="presale-details satu">
+          <div class="presale-details satu tiga">
             <div class="heading-sentence">
-              <img src="img/presale_details03.png" alt="greenLogo">
+              <img src="img/presale_details03.png" alt="yellowLogo">
               <h2>Phase <span>Three</span></h2>
               <p>0/04/2021 - 16/04/2021</p>
             </div>
@@ -309,7 +334,7 @@
       </ul>
       <ul class="copy-right">
         <li><a href="#"><img src="img/iconLogo.svg" alt="icon logo"></a></li>
-        <li>
+        <li class="list-socmed">
           <ul class="social-media">
             <li><a href="#"><img src="icon/twitter.png" alt="twiteer"></a></li>
             <li><a href="#"><img src="icon/telegram.png" alt="telegram"></a></li>
@@ -326,5 +351,18 @@
       </ul>
     </footer>
   </main>
+  <script src="js/script.js"></script>
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVS62KC"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'TAG_ID');
+  </script>
 </body>
 </html>
