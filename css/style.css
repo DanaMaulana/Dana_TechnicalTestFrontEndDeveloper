@@ -26,8 +26,6 @@ header .hero-img-blur::before{
   position: absolute;
   top: 0;
   right: 0;
-  /* width: 100%; */
-  /* height: 100%; */
 }
 header .hero-img-blur {
   position: relative;
@@ -37,46 +35,48 @@ header .hero-img-blur {
 }
 header .container nav {
   display: flex;
-  justify-content: space-between;
 }
-header .container nav .list-left {
+header .container nav .list-menu {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background: #2278D4; */
 }
-header .container nav .list-left ul {
+header .container nav .list-menu ul {
   display: flex;
   margin-left: 30px;
 }
-header .container nav .list-left ul li {
+header .container nav .list-menu ul li {
   list-style: none;
   margin: 10px 20px;
   font-weight: 700;
   font-size: 14px;
 }
-header .container nav .list-left ul li a, header .container nav .list-right ul li a {
+header .container nav .list-menu ul li a, header .container nav .list-menu ul li a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
 }
-header .container nav .list-left ul li a:hover, header .container nav .list-right ul li a:hover {
+header .container nav .list-menu ul li a:hover, header .container nav .list-menu ul li a:hover {
   color: rgb(72, 135, 207);
 }
-header .container nav .list-right ul {
+header .container nav .list-menu ul {
   display: flex;
 }
-header .container nav .list-right ul li {
+header .container nav .list-menu ul li {
   list-style: none;
   margin: 10px 20px;
   font-weight: 700;
   font-size: 14px;
 }
-header .container nav .list-right ul li.signUp a {
+header .container nav .list-menu ul li.signUp a {
   background: transparent;
   padding: 10px 23px;
   border: 2px solid #22A75D;
   border-radius: 52px;
   transition: 0.3s;
 }
-header .container nav .list-right ul li.signUp a:hover {
+header .container nav .list-menu ul li.signUp a:hover {
   color: #fff;
   background: #22A75D;
 }
@@ -94,6 +94,7 @@ main section .container.hero-banner .content-banner {
 }
 main section .container.hero-banner .content-banner.satu {
   padding: 5rem;
+  z-index: 1;
 }
 main section .container.hero-banner .content-banner.satu a {
   font-weight: 600;
@@ -131,22 +132,17 @@ main section .container.hero-banner .content-banner img {
   margin-top: -9rem;
   max-width: 950px;
   pointer-events: none;
-  /* background: blue; */
 }
 /* Period of time */
 main section .container.period-of-time {
   width: 100%;
-  /* background: tomato; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* background: #22A75D; */
 }
 main section .container.period-of-time .period-heading h2 {
   margin-top: 8rem;
   color: #fff;
   font-size: 4rem;
-  line-height: 72px;
   padding-left: 90px;
 }
 main section .container.period-of-time .period-body {
@@ -230,8 +226,6 @@ main section .container.feature-section {
 }
 main section .container.feature-section .feature {
   max-width: 670px;
-  /* height: 430px; */
-  /* margin: auto; */
   border-radius: 17px;
   margin: 0 10px;
 }
@@ -363,7 +357,7 @@ main section .container.services-section .services.tiga .paragraph-sentence ol l
 main section .container.services-section .services.empat .paragraph-sentence ol li::marker {
   color: #E20613;
 }
-/* tokner satu */
+/* Tokner is coming */
 main section .container.tokner-section {
   display: flex;
 }
@@ -375,7 +369,8 @@ main section .container.tokner-section .tokner.dua {
   width: 50%;
   padding: 5rem;
 }
-main section .container.tokner-section .tokner.satu a {
+main section .container.tokner-section .tokner.satu label {
+  cursor: pointer;
   font-weight: 600;
   position: relative;
   top: 2.3rem;
@@ -387,7 +382,7 @@ main section .container.tokner-section .tokner.satu a {
   border-radius: 52px;
   transition: 0.3s;
 }
-main section .container.tokner-section .tokner.satu a:hover {
+main section .container.tokner-section .tokner.satu label:hover {
   background: #22A75D;
 }
 main section .container.tokner-section .tokner .heading-sentence h2 {
@@ -398,14 +393,23 @@ main section .container.tokner-section .tokner .heading-sentence h2 {
   margin-left: 15px;
   display: inline-block;
 }
+main section .container.tokner-section .tokner #ch {
+  display: none;
+}
+main section .container.tokner-section .tokner .paragraph-sentence #ch:checked ~ .hidden {
+  display: block;
+}
+main section .container.tokner-section .tokner #ch:checked ~ label {
+  display: none;
+}
 main section .container.tokner-section .tokner .paragraph-sentence p {
   color: #f4f4f4;
   margin-top: 2.5rem;
   line-height: 25px;
   letter-spacing: 1px;
 }
-main section .container.tokner-section .tokner .paragraph-sentence p.kutipan {
-  background: #E20613;
+main section .container.tokner-section .tokner .paragraph-sentence .hidden {
+  display: none;
 }
 main section .container.tokner-section .tokner .paragraph-sentence .kutipan {
   position: relative;
@@ -584,7 +588,6 @@ main section.buying .container.buying-section .buying-body .buying-box.dua::befo
 footer {
   max-width: 1920px;
   margin: auto;
-  /* background: #fff; */
   padding: 3rem 0;
   margin-top: 10rem;
 }
