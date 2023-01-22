@@ -81,6 +81,38 @@ header .container nav .list-menu ul li.signUp a:hover {
   background: #22A75D;
 }
 /* Hero banner */
+main section .slider-banner {
+  max-width: 1920px;
+  margin: auto;
+}
+/* Class Slick */
+ul.slick-dots {
+  margin-left: 4.5rem;
+  margin-top: -15rem;
+  z-index: 99;
+  position: relative;
+}
+ul.slick-dots li {
+  cursor: pointer;
+  margin: 0 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transition: .3s;
+}
+ul.slick-dots li button {
+  display: none;
+}
+.slick-active {
+  /* background: #E20613; */
+}
+ul.slick-dots li.slick-active {
+  height: 17px;
+  width: 17px;
+  background: #fff;
+}
 main section .container {
   max-width: 1920px;
   margin: auto;
@@ -148,32 +180,70 @@ main section .container.period-of-time .period-heading h2 {
 main section .container.period-of-time .period-body {
   display: flex;
   align-items: center;
+  position: relative;
 }
 main section .container.period-of-time .period-body .period.list-period-of-time {
   width: 25%;
   padding-left: 140px;
-  /* background: red; */
 }
-main section .container.period-of-time .period-body .period.list-period-of-time ul {
+main section .container.period-of-time .period-body .period.list-period-of-time ul.option-nonResponsive {
   margin-top: 10rem;
 }
-main section .container.period-of-time .period-body .period.list-period-of-time ul li {
+main section .container.period-of-time .period-body .period.list-period-of-time .option-responsive {
+  display: none;
+}
+main section .container.period-of-time .period-body .period.list-period-of-time ul.option-nonResponsive li {
   font-weight: 600;
   padding-left: 5ch;
   color: #fff;
-  line-height: 5;
+  /* line-height: 5; */
+  margin: 5rem 0;
+  cursor: pointer;
 }
 main section .container.period-of-time .period-body .period.list-period-of-time ul li::marker {
   content: url("../icon/line.png");
 }
 main section .container.period-of-time .period-body .period.image {
   width: 75%;
-  /* background: blue; */
 }
-main section .container.period-of-time .period-body .period img {
+main section .container.period-of-time .period-body .period img.image-period {
+  position: relative;
   max-width: 1115px;
   float: right;
   pointer-events: none;
+  display: none;
+}
+main section .container.period-of-time .period-body .period.pointLine {
+  position: absolute;
+  left: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 11%;
+  z-index: 1;
+}
+.period span:nth-child(1)::before {
+  content: url(../img/pointLine.png);
+  font-size: 5rem;
+  position: absolute;
+  /* background: #0eff72; */
+  /* width: 100px;
+  height: 200px; */
+  /* z-index: 10000; */
+  top: 6rem;
+  left: 20rem;
+}
+.period span:nth-child(2)::before {
+  content: url(../img/pointLine.png);
+  font-size: 5rem;
+  position: absolute;
+  top: 12rem;
+  left: 20rem;
+}
+.block{
+  display: block !important;
+}
+.none{
+  display: none !important;
 }
 /* contact us */
 main section .container.contact-section {
@@ -311,6 +381,7 @@ main section .container.excess-section .excess {
 main section .container.excess-section .excess.satu img {
   width: 100%;
   pointer-events: none;
+  margin-top: 10px;
 }
 /* excess dua */
 main section .container.excess-section .excess.dua {
