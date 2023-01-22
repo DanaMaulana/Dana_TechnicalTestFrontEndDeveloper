@@ -18,6 +18,10 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TVS62KC');</script>
     <!-- End Google Tag Manager -->
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="js/js/slick-1.8.0/slick.css"/>
+    
+            
 </head>
 <body>
   <!-- header -->
@@ -47,18 +51,34 @@
   <main>
     <!-- Hero banner -->
     <section>
-      <div class="container hero-banner">
-        <div class="content-banner satu">
-          <div class="heading-sentence">
-            <h1>Reimagining social<br>media through the<br>power of the blockchain.</h1>
+      <div class="slider-banner">
+        <div class="container hero-banner">
+          <div class="content-banner satu">
+            <div class="heading-sentence">
+              <h1>Reimagining social<br>media through the<br>power of the blockchain.</h1>
+            </div>
+            <div class="paragraph-sentence">
+              <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network</p>
+            </div>
+            <a class="trackingLearnMore" href="#">Learn More</a>
           </div>
-          <div class="paragraph-sentence">
-            <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network</p>
+          <div class="content-banner dua sliderBanner">
+            <img class="hero-image" src="img/heroBanner01.png" alt="hero image01">
           </div>
-          <a class="trackingLearnMore" href="#">Learn More</a>
         </div>
-        <div class="content-banner dua">
-          <img class="hero-image" src="img/heroBanner.png" alt="hero image">
+        <div class="container hero-banner">
+          <div class="content-banner satu">
+            <div class="heading-sentence">
+              <h1>Stand Out<br>from The Crowd.</h1>
+            </div>
+            <div class="paragraph-sentence">
+              <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+            </div>
+            <a class="trackingLearnMore" href="#">Learn More</a>
+          </div>
+          <div class="content-banner dua sliderBanner">
+            <img class="hero-image" src="img/heroBanner02.png" alt="hero image01">
+          </div>
         </div>
       </div>
     </section>
@@ -72,24 +92,35 @@
           <div class="period list-period-of-time">
             <div class="option-responsive">
 							<select>
-								<option value="HND">2018</option>
-								<option value="CTS">2019</option>
-								<option value="HKD">2020</option>
-								<option value="OKA">2021</option>
-								<option value="CGK">2022</option>
+								<option value="HND" onclick="tesTap(2018)">2018</option>
+								<option value="CTS" onclick="tesTap(2019)">2019</option>
+								<option value="HKD" onclick="tesTap(2020)">2020</option>
+								<option value="OKA" onclick="tesTap(2021)">2021</option>
+								<option value="CGK" onclick="tesTap(2022)">2022</option>
 							</select>
               <img src="img/arrow.png" alt="arrow">
 						</div>
             <ul class="option-nonResponsive">
-              <li>2018</li>
-              <li>2019</li>
-              <li>2020</li>
-              <li>2021</li>
-              <li>2022</li>
+              <li onclick="tesTap(2018)">2018</li>
+              <li onclick="tesTap(2019)">2019</li>
+              <li onclick="tesTap(2020)">2020</li>
+              <li onclick="tesTap(2021)">2021</li>
+              <li onclick="tesTap(2022)">2022</li>
             </ul>
           </div>
+          <!-- <div class="period pointLine">
+            <img id="img-line01" class="line-period" src="img/pointLine.png" alt="Desktop" style="transform: translateY(-120px);">
+            <img id="img-line02" class="line-period" src="img/pointLine.png" alt="Desktop" style="transform: translateY(-40px);">
+            <img id="img-line03" class="line-period" src="img/pointLine.png" alt="Desktop" style="transform: translateY(40px);">
+            <img id="img-line04" class="line-period" src="img/pointLine.png" alt="Desktop" style="transform: translateY(120px);">
+            <img id="img-line05" class="line-period" src="img/pointLine.png" alt="Desktop" style="transform: translateY(200px);">
+          </div> -->
           <div class="period image">
-            <img class="hero-image" src="img/desktop.png" alt="Desktop">
+            <span><img id="img-2018" class="image-period" src="img/desktop01.png" alt="Desktop"></span>
+            <span><img id="img-2019" class="image-period" src="img/desktop02.png" alt="Desktop"></span>
+            <span><img id="img-2020" class="image-period" src="img/desktop03.png" alt="Desktop"></span>
+            <span><img id="img-2021" class="image-period" src="img/desktop04.png" alt="Desktop"></span>
+            <span><img id="img-2022" class="image-period" src="img/desktop05.png" alt="Desktop"></span>
           </div>
         </div>
       </div>
@@ -351,7 +382,12 @@
       </ul>
     </footer>
   </main>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="js/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/js/slick-1.8.0/slick.min.js"></script>
   <script src="js/script.js"></script>
+
+
   <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVS62KC"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
